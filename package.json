@@ -1,0 +1,14 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^5.6.9",
+    "express": "latest",
+    "body-parser": "latest"
+  }
+}
