@@ -62,7 +62,7 @@ function retrieveSubmitList() {
         var result = JSON.parse(xmlhttp.responseText);
         var studentList; 
         var className = '<center>' + '<h2>' + result[0].className + '</h2>' + '</center>';
-        var assignmentName = '<center><h3>' + result[0].assignmentName + '</h3></center><hr>';
+        var assignmentName = '<center><h3>' + result[0].assignmentName + '</h3></center>';
         document.getElementById('className').innerHTML = className;
         document.getElementById('assignmentName').innerHTML = assignmentName;
       

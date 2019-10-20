@@ -17,7 +17,7 @@ header {
 
 body {
   min-height: 450px;
-  height: 100vh;
+  height: 300vh;
   margin: 0;
   background: radial-gradient(ellipse farthest-corner at center top, #f39264 0%, #f2606f 100%);
   color: #fff;
@@ -52,7 +52,8 @@ body {
 }
 .leaderboard ol {
   counter-reset: leaderboard;
-  margin: 0 -15px 0 -55px;
+  list-style-type: none;
+  /*margin: 0 -15px 0 -55px;*/
 }
 .leaderboard ol li {
   height: 90px;
@@ -198,11 +199,10 @@ body {
 .repl_img {
   position: fixed;
   z-index: 1;
-  bottom: 0;
-  left: 45%;
-  right: 55%;
+  top: 0;
+  left: 43%;
   width: 50vw;
-  max-width: 200px;
+  max-width: 150px;
   padding: 10px;
 }
 .repl_img img {
@@ -238,7 +238,8 @@ body {
 }
 .leaderboard2 ol {
   counter-reset: leaderboard2;
-  margin: 0 -15px 0 -55px;
+  list-style-type: none;
+  /*margin: 0 -15px 0 -55px;*/
 }
 .leaderboard2 ol li {
   height: 90px;
@@ -452,6 +453,90 @@ text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
 -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
 transition: all 0.4s ease 0s;
 }
+
+
+#className {
+  width: 20%;  
+}
+
+#assignmentName {
+  width: 20%;
+}
+
+
+@media screen and (max-width: 1170px) {
+  .leaderboard {
+    position: relative;
+    top: 350px;
+    left: 50%;
+    width: 375px;
+    height: 570px;
+  }
+  
+  .leaderboard ol li {
+    height: 95px;
+  }  
+}
+
+
+
+@media screen and (max-width: 1170px) {
+  .leaderboard2 {
+    position: relative;
+    top: 400px;
+    left: 50%;
+    width: 375px;
+    height: 570px;
+  }
+  
+  .leaderboard2 ol li {
+    height: 95px;
+  }  
+}
+
+
+
+
+@media screen and (max-width: 425px) {
+  .leaderboard{
+    position: relative;   /******/
+    top: 500px;  /*****/
+    /*position: absolute;*/
+    /*top: 150%;*/  /****/
+    left: 50%;  /******/
+    width: 285px;  /*******/
+    height: 795px;  /******/
+  }
+  
+  .leaderboard ol li {
+    height: 135px;  /******/
+  }
+
+  body {
+    height: 350vh;
+  }
+}
+
+
+
+@media screen and (max-width: 425px) {
+  .leaderboard2{
+    position: relative;   /******/
+    top: 550px;  /*****/
+    /*position: absolute;*/
+    /*top: 150%;*/  /****/
+    left: 50%;  /******/
+    width: 285px;  /*******/
+    height: 795px;  /******/
+  }
+  
+  .leaderboard2 ol li {
+    height: 135px;  /******/
+  }
+}
+
+
+
 
 
 
