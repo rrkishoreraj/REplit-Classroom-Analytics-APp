@@ -117,6 +117,10 @@ function retrieveAssignments() {
         var result = JSON.parse(xmlhttp.responseText);
         //console.log(result);
         var select = document.getElementById("assignments");
+        var option = document.createElement("option");
+        option.text = "--SELECT--";
+        option.value = "";
+        select.add(option);
         for (var i = 0; i < result.length; i++){
           var option = document.createElement("option");
           option.text = result[i].name;
@@ -124,6 +128,7 @@ function retrieveAssignments() {
           select.add(option);
 
         }
+        $('option[value=""]').prop('disabled', true);
       }
     }
   }
