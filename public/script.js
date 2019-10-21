@@ -111,24 +111,24 @@ function retrieveSubmitList() {
 
 function retrieveAssignments() {
   var xmlhttp = new XMLHttpRequest();
+  var dataList = document.getElementById('json-datalist');
+  var input = document.getElementById("assignments");
   xmlhttp.onreadystatechange = () => {
     if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
       if (xmlhttp.responseText) {
         var result = JSON.parse(xmlhttp.responseText);
         //console.log(result);
-        var dataList = document.getElementById('json-datalist');
-        var input = document.getElementById("assignments");
         for (var i = 0; i < result.length; i++){
           var option = document.createElement("option");
           option.value = result[i].name;
           dataList.appendChild(option);
-
         }
-        //$('option[value=""]').prop('disabled', true);
+        input.placeholder = "Search assignments...";
       }
     }
   }
 
+  input.placeholder = "Loading options...";
   xmlhttp.open("GET", "/assignments", true);
   xmlhttp.send();
   xmlhttp.onerror = () => {
