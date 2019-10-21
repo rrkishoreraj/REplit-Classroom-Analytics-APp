@@ -116,19 +116,15 @@ function retrieveAssignments() {
       if (xmlhttp.responseText) {
         var result = JSON.parse(xmlhttp.responseText);
         //console.log(result);
-        var select = document.getElementById("assignments");
-        var option = document.createElement("option");
-        option.text = "--SELECT--";
-        option.value = "";
-        select.add(option);
+        var dataList = document.getElementById('json-datalist');
+        var input = document.getElementById("assignments");
         for (var i = 0; i < result.length; i++){
           var option = document.createElement("option");
-          option.text = result[i].name;
           option.value = result[i].name;
-          select.add(option);
+          dataList.appendChild(option);
 
         }
-        $('option[value=""]').prop('disabled', true);
+        //$('option[value=""]').prop('disabled', true);
       }
     }
   }

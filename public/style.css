@@ -463,6 +463,9 @@ transition: all 0.4s ease 0s;
   width: 20%;
 }
 
+#assignments {
+  width: 15%;
+}
 
 @media screen and (max-width: 1170px) {
   .leaderboard {

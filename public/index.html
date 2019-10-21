@@ -50,9 +50,10 @@
         <center>
           <form method="POST" action="/viewAssignments">
             <span>
-              <select name = "assignments" id="assignments" size="1" class="select-css">
-              </select>
-              <input type='submit'name ='Fetch' class="example_b">
+              <input type="text" name = "assignments" id="assignments" list="json-datalist">
+              <datalist id="json-datalist"></datalist>
+              <br>
+              <input type='submit' name ='Fetch' class="example_b">
             </span>
           </form>
         </center>
