@@ -31,13 +31,14 @@ function retrieveSubmitTimeList() {
               studentList = studentList + timeTakenInSec + ' seconds</i></b></small>';
             }
             list.innerHTML = studentList;
+            list.getElementsByTagName("MARK")[0].id = 'li2'+i;
             orderedList.appendChild(list);
             list = document.createElement('li');
           }
         }          //sampleId.innerHTML += result.length;
       }
       else {
-        list.innerHTML = '<center><mark><strong>No Submissions yet!.. :(</strong></mark></center>';
+        list.innerHTML = '<center><mark id="li20"><strong>No Submissions yet!.. :(</strong></mark></center>';
         orderedList.appendChild(list);
       }
     }
@@ -88,13 +89,14 @@ function retrieveSubmitList() {
               studentList = studentList + timeTakenInSec + ' seconds</i></b></small>';
             }
             list.innerHTML = studentList;
+            list.getElementsByTagName("MARK")[0].id = 'li'+i;
             orderedList.appendChild(list);
             list = document.createElement('li');
           }
         }          //sampleId.innerHTML += result.length;
       }
       else {
-        list.innerHTML = '<center><mark><strong>No Submissions yet!.. :(</strong></mark></center>';
+        list.innerHTML = '<center><mark id="li0"><strong>No Submissions yet!.. :(</strong></mark></center>';
         orderedList.appendChild(list);
       }
     }
@@ -147,3 +149,35 @@ function viewStudentList() {
 }
 
 
+window.onload = function() {
+  viewStudentList();
+  checkTheme();
+}
+
+
+function checkTheme() {
+  if (localStorage.getItem('isDark') == null || localStorage.getItem('isDark') == 0){
+    document.body.classList.remove('darkmode');
+  }
+  else {
+    document.body.classList.add('darkmode');    
+  }  
+}
+
+function toggleDarkLightMode(){
+  
+  if (localStorage.getItem('isDark') == null){
+    localStorage.setItem('isDark', 1);
+    document.body.classList.add('darkmode');
+  }
+  else if (localStorage.getItem('isDark') == 1){
+    localStorage.setItem('isDark', 0);
+    document.body.classList.remove('darkmode');
+  }
+  else {
+    localStorage.setItem('isDark', 1);
+    document.body.classList.add('darkmode');
+  }
+  
+  //console.log(sessionStorage.getItem('isDark'));
+}

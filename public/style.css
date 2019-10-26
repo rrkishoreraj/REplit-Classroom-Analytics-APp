@@ -546,6 +546,54 @@ transition: all 0.4s ease 0s;
 }
 
 
+.darkmode {
+  background: radial-gradient(ellipse farthest-corner at center top, #070c38 0%, #000003 100%); 
+}
+
+
+.darkmode #li0{
+    background: #09aebd;  
+  
+}
+
+
+.darkmode #li1 {
+  background: #08929e;
+}
+
+.darkmode #li2 {
+  background: #077f8a;
+}
+
+.darkmode #li3 {
+  background: #05737d;
+}
+
+.darkmode #li4 {
+  background: #056a73;
+}
+
+
+.darkmode #li20 {
+  background: #09aebd;  
+}
+
+.darkmode #li21 {
+  background: #08929e;
+}
+
+.darkmode #li22 {
+  background: #077f8a;
+}
+
+.darkmode #li23 {
+  background: #05737d;
+}
+
+.darkmode #li24 {
+  background: #056a73;
+}
+
 
 
 
