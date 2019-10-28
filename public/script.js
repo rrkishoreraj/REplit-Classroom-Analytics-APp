@@ -154,13 +154,16 @@ window.onload = function() {
   checkTheme();
 }
 
+//https://blog.webjeda.com/dark-theme-switch/
 
 function checkTheme() {
   if (localStorage.getItem('isDark') == null || localStorage.getItem('isDark') == 0){
     document.body.classList.remove('darkmode');
+    document.getElementById("lightdarkmode").checked = true;
   }
   else {
     document.body.classList.add('darkmode');    
+    document.getElementById("lightdarkmode").checked = false;
   }  
 }
 
@@ -169,15 +172,19 @@ function toggleDarkLightMode(){
   if (localStorage.getItem('isDark') == null){
     localStorage.setItem('isDark', 1);
     document.body.classList.add('darkmode');
+    document.getElementById("lightdarkmode").checked = false;
   }
   else if (localStorage.getItem('isDark') == 1){
     localStorage.setItem('isDark', 0);
     document.body.classList.remove('darkmode');
+    document.getElementById("lightdarkmode").checked = true;
   }
   else {
     localStorage.setItem('isDark', 1);
     document.body.classList.add('darkmode');
+    document.getElementById("lightdarkmode").checked = false;
   }
   
   //console.log(sessionStorage.getItem('isDark'));
 }
+

@@ -200,7 +200,7 @@ body {
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 43%;
+  left: 0;
   width: 50vw;
   max-width: 150px;
   padding: 10px;
@@ -593,6 +593,120 @@ transition: all 0.4s ease 0s;
 .darkmode #li24 {
   background: #056a73;
 }
+
+
+/*Button to toggle between light and dark mode!!!...
+//https://bootsnipp.com/snippets/Q0d6E*/
+
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  top: 10px;
+  right: 0;
+  z-index: 2;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  z-index: 2;
+  content: "";
+  height: 46px;
+  width: 46px;
+  left: 2px;
+  bottom: 2px;
+  background-color: darkslategrey;
+      -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.22);
+  -webkit-transition: .4s;
+  transition: all 0.4s ease-in-out;
+}
+.slider:after {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  content: "";
+    font-size: 20px;
+    text-align: left !important;
+    line-height: 50px;
+  background-image: url(https://cdn.glitch.com/c6c5f23b-124d-4050-8c3d-b199060d8afc%2FSun-icon-creative-design-by-LeisureProjects-580x387.jpg?v=1572217644708);
+  background-size: 80px 60px;
+  background-repeat: no-repeat;
+  background-position: 30px;
+  padding-left: 0;
+    width: 150px;
+    color: #fff;
+    height: 50px;
+    border-radius: 100px;
+    background-color: white;
+    -webkit-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    transform: translateX(-100px);
+    transition: all 0.4s ease-in-out;
+}
+
+input:checked + .slider:after {
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  /*width: 235px;*/
+  padding-left: 25px;
+}
+
+input:checked + .slider:before {
+  background-color: #ff6418;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(100px);
+  -ms-transform: translateX(100px);
+  transform: translateX(100px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 100px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.absolute-no {
+	position: absolute;
+	left: 0;
+	color: darkslategrey;
+	text-align: right !important;
+    font-size: 20px;
+    width: calc(100% - 25px);
+    height: 100px;
+    line-height: 50px;
+    cursor: pointer;
+  background-image: url(https://cdn.glitch.com/c6c5f23b-124d-4050-8c3d-b199060d8afc%2F5K6AMU.jpg?v=1572227601628); 
+  background-size: 70px 50px; 
+  background-repeat: no-repeat;
+  top: 0;
+  left: 60px;
+}
+
+
+
+
 
 
 

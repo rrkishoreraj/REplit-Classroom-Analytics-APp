@@ -29,11 +29,17 @@
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Spectral&display=swap" rel="stylesheet">
   </head>
+
+  <label class="switch">
+    <input type="checkbox" id="lightdarkmode" onclick="toggleDarkLightMode()">
+    <span class="slider round"></span>
+    <span class="absolute-no"></span>
+  </label>
+
   <center>
     <hr>
       <header>
         <h1>RECA APP</h1><hr>
-        <button onclick="toggleDarkLightMode()">
         <div>
 
           <p id="className">
@@ -129,7 +135,9 @@
 </html>
 
 
-
+<!--
+  References:
+  1. https://blog.teamtreehouse.com/creating-autocomplete-dropdowns-datalist-element
 
 
 
