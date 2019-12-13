@@ -17,7 +17,7 @@ This **feature helps** the **students** to **enhance** their **logical thinking 
 
 ------
 
-> **_Note: If more than one student take same amount of time (including the seconds) to complete the problem, then the one who has submitted first will take the lead._**
+> **_Note: If more than one student take same amount of time (including the seconds) to complete the problem, then the one who has submitted first will take the lead._
 
 ------
 
@@ -49,10 +49,11 @@ Multiple classrooms can be linked to this app.
 
 ## Upcoming versions of the app:
 
-Further features to my app (on progress),
+Further features to my app,
 
-*  **Sending mail** to all the participants in the classroom **automatically** at the end of the day (**12.00 A.M everyday**) regarding the **"top 10 winners of the day!"** ( **5** based on **"submission time"** + **5** based on **"completion time"**).
+*  **Sending mail** to all the participants in the classroom **automatically** at the end of the day (**12.00 A.M everyday**) regarding the **"top 10 winners of the day!"** ( **5** based on **"submission time"** + **5** based on **"completion time"**) - on progress.
 > _Reason: Teacher/student will get the final report as a mail at the day end._
+*  Transformation of the same app to a hybrid app using React Native - on progress.
 *  Posting the students **completion status** in a **gitter room automatically** (or in some other social media) once they **complete** an assignment.
 > _Reason: To publish their own activity to the world._
-
+*  Comingup with a mechanism to detect the plagiarism.
